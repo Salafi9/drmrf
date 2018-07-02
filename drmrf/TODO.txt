@@ -1,0 +1,80 @@
+"""
+__author__ = 'Ahmad Abdulnasir <dabolinux@gmail.com>'
+__homepage__ = https://www.dabolinux.com
+__copyright__ = 'Copyright (c) 2018, salafi'
+__version__ = "0.01t"
+"""
+Add color{
+    edge: #8f2e84
+    backgroud: #fbcebe;
+}
+
+****************
+ <script type="text/javascript" src="http://yourblog.tumblr.com/js?start=0&num=5"></script>
+The element in the above code has some useful elements:
+
+start=0 - which post to start from, 0 is last
+
+num=5 - number of posts to display
+
+
+<div class='tumblrInjection'>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection1' href=''><img id='tumblrInjectionPhoto1' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText1'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection2' href=''><img id='tumblrInjectionPhoto2' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText2'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection3' href=''><img id='tumblrInjectionPhoto3' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText3'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection4' href=''><img id='tumblrInjectionPhoto4' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText4'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection5' href=''><img id='tumblrInjectionPhoto5' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText5'></p></div>
+</div>
+
+<script type='text/javascript' src='http://ahmadabdulnasir.tumblr.com/api/read/json?number=5&type=photo'></script>
+<script type='text/javascript'>
+    document.getElementById('tumblrInjectionPhoto1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-500']);
+    document.getElementById('tumblrInjection1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);
+    document.getElementById('tumblrInjectionText1').innerHTML = tumblr_api_read.posts[0]['photo-caption'];
+    document.getElementById('tumblrInjectionPhoto2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-500']);
+    document.getElementById('tumblrInjection2').setAttribute('href', tumblr_api_read.posts[1]['url-with-slug']);
+    document.getElementById('tumblrInjectionText2').innerHTML = tumblr_api_read.posts[1]['photo-caption'];
+    document.getElementById('tumblrInjectionPhoto3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-500']);
+    document.getElementById('tumblrInjection3').setAttribute('href', tumblr_api_read.posts[2]['url-with-slug']);
+    document.getElementById('tumblrInjectionText3').innerHTML = tumblr_api_read.posts[2]['photo-caption'];
+    document.getElementById('tumblrInjectionPhoto4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-500']);
+    document.getElementById('tumblrInjection4').setAttribute('href', tumblr_api_read.posts[3]['url-with-slug']);
+    document.getElementById('tumblrInjectionText4').innerHTML = tumblr_api_read.posts[3]['photo-caption'];
+    document.getElementById('tumblrInjectionPhoto5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-500']);
+    document.getElementById('tumblrInjection5').setAttribute('href', tumblr_api_read.posts[4]['url-with-slug']);
+    document.getElementById('tumblrInjectionText5').innerHTML = tumblr_api_read.posts[4]['photo-caption'];
+</script>
+
+****************
+https://www.instagram.com/ahmadabdulnasir/
+
+****************
+<img src="https://api.instagram.com/oembed?url=https://www.instagram.com/ahmadabdulnasir/">
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bj_UpQoBT38/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:32.414307004470935% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bj_UpQoBT38/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">飞咯！飞咯！🙈😝 #赵丽颖#zhaoliying #zaniliazhao</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/lovezhaoliying/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> 赵丽颖Zanilia</a> (@lovezhaoliying) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-14T03:07:35+00:00">Jun 13, 2018 at 8:07pm PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bj_UpQoBT38/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:32.414307004470935% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Bj_UpQoBT38/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by 赵丽颖Zanilia (@lovezhaoliying)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-14T03:07:35+00:00">Jun 13, 2018 at 8:07pm PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+
+
+    <p>Table with colgroup</p>
+<table>
+  <colgroup span="4"></colgroup>
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+    <th>Language</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington, D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+
+heading color: #231f20;

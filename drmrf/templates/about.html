@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <title>Darul Ma'arif - About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/w3.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body class="aboutsch">
+    
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="/gallery/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Gallery</a>
+      <a href="/students/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Students</a>
+      <a href="/contact/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/admin/" class="w3-bar-item w3-button">Admin</a>
+          <a href="/students/staffs" class="w3-bar-item w3-button">Staffs</a>
+          <a href="/about/" class="w3-bar-item w3-button">About</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div> 
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="/students/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Student</a>
+    <a href="/gallery/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gallery</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Us</a>
+    <a href="/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+  </div>
+   
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    
+        <div class="w3-logo">
+			<img src="{% static 'images/banner.png' %}" class="myimg" alt="Darul Ma'arif Banner">
+    </div>
+
+    <div class="w3-display-container w3-center">
+      <h1 class="aboutschtitle">  SCHOOL BIOGRAPHY</h1>
+      <h4>
+        <p>
+          <img src="{% static 'images/a1.png' %}" class="aimgr" alt="Kamaludden Adamu Na Ma'aji">
+          The school started as Islamiyya School, situated   at Warure Quarters in 
+          Gwale area. The School was established by Late Sheikh  Malam 
+          Kamaludden Adamu Nama'aji Alfindiki in 1972. He gave  the school its 
+          present name <b>DARUL MA'ARIF</b> (May his soul rest in perfect peace; may Allah 
+          reward him with Jannatul Firdaus ameen). He died 9 years after he named the 
+          school, in 1981.
+        </p>
+
+        <p>
+            <img src="{% static 'images/a2.png' %}" class="aimgl" alt="Malam Garba Adamu Na Ma'aji">
+            After his death, his brother Malam Garba Adamu Nama'aji Alfindiki continued with this great
+            work of his (Sheikh  Malam Kamaludden Adamu Nama'aji Alfindiki). The school continues to exist
+            under his leadership up to the time when late Malam Kamaludden's son Alhaji Shafi'u Kamaludden
+            Adamu Nama'aji Alfindiki established a junior secondary school at the premises of DARUL MA'ARIF 
+            ISLAMIYYA in Warure Quarters both the school operates in the same premises.
+        </p>
+
+        <p>
+            <img src="{% static 'images/a3.png' %}" class="aimgr" alt="Alhaji Sha">
+            The school has registered as Junior Secondary School by Kano State Ministry of Education in 2011, 
+            while  in 2016 the Ministry of Education up lifted the leve of the school to Senior Islamic Secondary
+            School. The school received its first principal (Mal. Idris Hussain) from Kano State Senior Secondary
+            School Management Board (KSSSMB) in 2012. <br />
+            Due to over population, the Management of school finally relocates the school to its present location
+            Gadon Kaya behind Alaramma's house, by Layin Ubale Gwamnati. <br />
+            The School has sections in the following subjects of studies:- Arabic Section, Commercial, Art and Science
+            Section respectively, and occupied eleven (11) classes, operating both Junior and Senior Secondary with one 
+            mini library a multipurpose Science Laboratory, Examination office, Principal, Vice Principal and Proprietor's 
+            office respectively. In addition it has two staff rooms for both Male and Female staff as well as seven water 
+            system, toilet for students and three for Male and Female staffs, principal inclusive.
+        </p>
+      </h4>
+
+        <h3> <b>STAFF STRENGTH</b></h3>
+        <h4>
+          <p>
+            The school employed the service of at least thirteen (13) teaching staff, eight (8) of them graduates in major subjects,
+            (4) four staff from KSSSMB and two (2) teaching staff from Gwale LGA all graduates. <br />
+            The student's population is getting to 300 both male and female. May Allah (S.W.T) guide us reward those who established
+            the school, may Allah (S.W.T) reward Malam Kamaludden Alfindiki and Malam Garba Adamu Nama'aji and all that help us liftment
+            of the school to its present grade with Jannatul Firdaus. Ameen.
+        </p>
+        </h4>
+    </div>
+                  <hr>
+    <div class="w3-display-container w3-center">
+      <h1 class="aboutschtitle">  OUR VISION</h1>
+      <h4>
+        To be among Top Ten voluntary <br />  schools in the state that Provide <br />  Qualitative Teaching and learning <br />  Activities
+      </h4>
+    </div>
+
+    <div class="w3-display-container w3-center">
+      <h1 class="aboutschtitle">  OUR MISSION</h1>
+      <h4>
+        To Provide conductive atmosphere  <br /> 
+         for Teaching and learning Activities <br /> 
+         with functional guidance and counselling <br /> 
+          in collaboration with the stakeholders.
+      </h4>
+    </div>
+    
+    </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="http://www.dabolinux.com" target="_blank">DaboLinux</a></p>
+  </footer>
+  
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else { 
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <!--   <title>{% block title %}{% endblock %}</title> -->
+ <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+<title>Darul Ma'arif - Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static "css/w3.css" %}">
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/gallery/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Gallery</a>
+    <a href="/students/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Students</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/admin/" class="w3-bar-item w3-button">Admin</a>
+        <a href="/students/staffs" class="w3-bar-item w3-button">Staffs</a>
+        <a href="/about/" class="w3-bar-item w3-button">About</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div> 
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="/students/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Student</a>
+  <a href="/gallery/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gallery</a>
+  <a href="/contact/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Us</a>
+  <a href="/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+</div>
+ 
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-logo">
+			<img src="{% static 'images/banner.png' %}" class="myimg" alt="Darul Ma'arif Banner">
+    </div>
+    
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute1.jpg" %}"  class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 class="sch">Education with technologies</h3>
+      <p class="sch"><b>Successful career starts with good education</b></p>   
+    </div>
+  </div>
+   
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute2.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 class="sch">Place to achieve good results</h3>
+      <p class="sch"><b>Make the best choice for your education</b></p>    
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute3.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 class="sch">Turning goals into reality</h3>
+      <p class="sch"><b>Successful career starts with good education</b></p>    
+    </div>
+  </div>
+  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute4.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 class="sch">Preparing for successful future</h3>
+      <p class="sch"><b>Make the best choice for your education</b></p>    
+    </div>
+  </div>
+  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute5.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 class="sch">Kano State</h3>
+      <p class="sch"><b>Thank you, Kano - For Your Trust in Us</b></p>    
+    </div>
+  </div>
+  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute6.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3 class="sch">Preparing for successful future</h3>
+        <p class="sch"><b>Make the best choice for your education</b></p>    
+    </div>
+  </div>
+  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="{% static "images/qoute7.jpg" %}" class="slideimg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3 class="sch">Turning goals into reality</h3>
+        <p class="sch"><b>Successful career starts with good education</b></p>        
+    </div>
+    </div>
+
+    <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute8.jpg" %}"  class="slideimg">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3 class="sch">Education with technologies</h3>
+          <p class="sch"><b>Successful career starts with good education</b></p>   
+        </div>
+    </div>
+       
+      <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute9.jpeg" %}" class="slideimg">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3 class="sch">Place to achieve good results</h3>
+          <p class="sch"><b>Make the best choice for your education</b></p>    
+        </div>
+      </div>
+      
+      <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute10.jpg" %}" class="slideimg">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3 class="sch">Turning goals into reality</h3>
+          <p class="sch"><b>Successful career starts with good education</b></p>    
+        </div>
+      </div>
+      
+        <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute11.jpg" %}" class="slideimg">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3 class="sch">Preparing for successful future</h3>
+          <p class="sch"><b>Make the best choice for your education</b></p>    
+        </div>
+      </div>
+      
+        <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute12.jpg" %}" class="slideimg">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3 class="sch">Kano State</h3>
+          <p class="sch"><b>Thank you, Kano - For Your Trust in Us</b></p>    
+        </div>
+      </div>
+      
+      <div class="mySlides w3-display-container w3-center">
+        <img src="{% static "images/qoute13.jpg" %}" class="slideimg">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3 class="sch">Preparing for successful future</h3>
+            <p class="sch"><b>Make the best choice for your education</b></p>    
+        </div>
+      </div>
+      
+        <div class="mySlides w3-display-container w3-center">
+         <img src="{% static "images/qoute14.jpg" %}" class="slideimg">
+         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3 class="sch">Turning goals into reality</h3>
+            <p class="sch"><b>Successful career starts with good education</b></p>        
+         </div>
+        </div>
+
+      <div class="mySlides w3-display-container w3-center">
+          <img src="{% static "images/qoute15.jpg" %}" class="slideimg">
+          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+              <h3 class="sch">Preparing for successful future</h3>
+              <p class="sch"><b>Make the best choice for your education</b></p>    
+          </div>
+      </div>
+    <!-- End of Automatic Slideshow Images -->
+
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="http://www.dabolinux.com" target="_blank">DaboLinux</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+

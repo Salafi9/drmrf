@@ -1,0 +1,113 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Darul Ma'arif - About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/w3.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+   <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+  
+    <body>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="/apply" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Applicant</a>
+        <a href="/students" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Students</a>
+        <a href="/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="/admin" class="w3-bar-item w3-button">Admin</a>
+            <a href="/students/staffs" class="w3-bar-item w3-button">Staffs</a>
+            <a href="/about" class="w3-bar-item w3-button">About</a>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="/admin" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Admin</a>
+      <a href="/students/staffs" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Staffs</a>
+      <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+      <a href="/about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    </div>
+     
+    <!-- Page content -->
+   
+    <br /> <br />
+    <div class="w3-logo" style="margin-top: 30px">
+          <img src="{% static 'images/banner.png' %}" class="myimg" alt="Darul Ma'arif Banner">
+    </div> 
+       <div class="studentinput">
+         <h2> Darul Ma'arif Students Profile Portal</h2>
+         <h3> Please fill you Information to view Data</h3>
+          <form action="/students/student_profile/" method="POST" >
+            {% csrf_token %} 
+            <input type="text" name="adm_no" placeholder="Enter Admission No.." required>
+            <br />
+            <label><b>Class: </b> </label>
+            <select name="class_name" placeholder="Choose Your Class">
+                <option value="Jas_1">JAS 1</option>
+                <option value="Jas_2">JAS 2</option>
+                <option value="Jas_3">JAS 3</option>
+                <option value="Jis_1">JIS 1</option>
+                <option value="Jis_2">JIS 2</option>
+                <option value="Jis_3">JIS 3</option>
+                <option value="Sas_1">SAS 1</option>
+                <option value="Sas_2">SAS 2</option>
+                <option value="Sas_3">SAS 3</option>
+                <option value="Sis_1">SIS 1</option>
+                <option value="Sis_2">SIS 2</option>
+                <option value="Sis_3">SIS 3</option>
+              </select>
+            <br />
+            <button type="submit">View Profile</button>
+            
+        </form>
+
+       </div> 
+      
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="http://www.dabolinux.com" target="_blank">DaboLinux</a></p>
+  </footer>
+  
+  <script>
+  
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else { 
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  </body>
+  </html>
+  
